@@ -1,4 +1,5 @@
 {% load static wagtailuserbar %}
+{% load wagtailcore_tags %}
 
 <!DOCTYPE html>
 <html class="no-js" lang="en">
@@ -27,8 +28,6 @@
 
     <body class="{% block body_class %}{% endblock %}">
         {% wagtailuserbar %}
-
-        <p>Navbar</p>
 
         {% block content %}{% endblock %}
 
